@@ -1,0 +1,115 @@
+.c-header {
+  padding: 10px 20px;
+  background-color: $primary;
+  color: color-contrast($primary);
+
+  .navbar {
+    &__title {
+      font-size: 20px;
+      margin: 0;
+    }
+
+    &__menu {
+      position: fixed;
+      top: 60px;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+      opacity: 0;
+      visibility: hidden;
+      padding: 32px;
+      height: calc(100dvh - 60px);
+      width: 100%;
+      background-color: $gray-100;
+      transition: $transition-base;
+
+      &.is-open {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      &-item {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .navbar__toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 21px;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transform-origin: center;
+
+    &.is-active {
+      span {
+        &:nth-child(1) {
+          transform: translateY(9px) rotate(45deg);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:nth-child(3) {
+           transform: translateY(-9px) rotate(-45deg);
+        }
+      }
+    }
+    
+    &-icon {
+      width: 100%;
+      height: 3px;
+      background-color: color-contrast($primary);
+      transition: $transition-base;
+    }
+  }
+}
+
+ @include media-breakpoint-up(lg) {
+  .c-header {
+    padding: 8px 0;
+
+    .navbar {
+      &__menu {
+        width: auto;
+        position: static;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        padding: 0;
+        height: auto;
+        opacity: 1;
+        visibility: visible;
+        background-color: transparent;
+
+        &-item {
+          color: color-contrast($primary);
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      
+      &__toggle {
+        display: none;
+      }
+    }
+  }
+ }
+
+ @include media-breakpoint-down(lg) {
+  .c-header {
+    .container {
+      max-width: unset;
+    }
+  }
+ }

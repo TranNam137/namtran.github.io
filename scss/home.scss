@@ -1,0 +1,86 @@
+.c-section-hero {
+  background-color: $thirdly;
+  color: $white;
+  text-align: center;
+  padding: 50px 20px;
+
+  &__img {
+    max-width: 240px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 auto 32px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    &__flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    &__img {
+      margin: 0;
+    }
+
+    &__content {
+      text-align: left;
+      flex: 1;
+    }
+
+    &__title {
+      font-size: 3rem;
+    }
+
+    &__subtitle {
+      margin: 0;
+    }
+  }
+}
+
+.c-section-skills {
+  background-color: $gray-100;
+  text-align: center;
+
+  &__intro {
+    margin-bottom: 80px;
+  }
+
+  &__text {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  &__contain {
+    padding: 70px 32px 24px;
+    box-shadow: $box-shadow-sm;
+    position: relative;
+    background-color: $white;
+  }
+
+  &__list {
+    text-align: left;
+    li {
+      margin-bottom: 8px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: $thirdly;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}

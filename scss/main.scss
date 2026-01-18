@@ -1,0 +1,31 @@
+
+@import "variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "header";
+@import "footer";
+@import "home";
+@import "common";
+
+body {
+  font-family: 'Roboto', system-ui, -apple-system, sans-serif;
+  background-color: #F7F8FA;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+

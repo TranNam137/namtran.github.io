@@ -1,0 +1,126 @@
+.c-featured-project {
+  .card {
+    &-img-container {
+      overflow: hidden;
+    }
+
+    &-img-overlay {
+      color: $white;
+      background-color: rgba($gray-700,0.6);
+      transition: $transition-base;
+
+      .project-logo {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 50%;
+        margin-top: -38px;
+      }
+    }
+
+    .overlay-content {
+      margin-top: 600px;
+      background: rgba($secondary, 0.95);
+      text-decoration: none;
+    }
+
+    &-img-container {
+      &:hover {
+        .overlay-content {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+.c-project {
+  &__intro {
+    padding: 48px 0;
+    background-color: #41A4F5;
+
+    &-flex {
+      flex-direction: column;
+    }
+
+    &-contain {
+      flex: 1;
+    }
+
+    &-img {
+      background: rgba($black, 0.2);
+      padding: 0.2rem 1rem;
+      border-radius: 4px;
+
+      img {
+        width: 160px;
+        margin: auto;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      &-flex {
+        flex-direction: row;
+      }
+
+      &-contain {
+        & + div {
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+}
+
+.c-contact {
+  .profile-small {
+    width: 80px;
+    height: 80px;
+  }
+
+  .social-list-color {
+    a {
+      width: 36px;
+      height: 36px;
+      padding-top: 0.2rem;
+      display: inline-block;
+      text-align: center;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+}
+
+.c-resume {
+  .page-heading {
+    background-color: $thirdly;
+    height: 350px;
+
+    svg {
+      height: 1em;
+    }
+
+    .d-flex {
+      gap: 30px;
+    }
+  }
+
+  .resume-img {
+    margin-top: -200px;
+    
+    img {
+      box-shadow: $box-shadow-sm;
+      border-radius: 8px;
+    }
+  }
+
+   @include media-breakpoint-down(sm) {
+    h2{
+      width: 100%;
+      display: block;
+    }
+
+    .resume-img {
+      margin-top: -170px;
+    }
+   }
+}

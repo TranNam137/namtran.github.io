@@ -1,0 +1,11 @@
+.c-footer {
+  background-color: $gray-100;
+  padding: 20px 0;
+  text-align: center;
+
+  &__text {
+    color: color-contrast($gray-100);
+    font-size: 14px;
+    margin: 0;
+  }
+}
