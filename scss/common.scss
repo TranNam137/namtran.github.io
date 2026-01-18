@@ -37,7 +37,7 @@
 .c-project {
   &__intro {
     padding: 48px 0;
-    background-color: #41A4F5;
+    background-color: $gray-200;
 
     &-flex {
       flex-direction: column;
@@ -92,7 +92,7 @@
 
 .c-resume {
   .page-heading {
-    background-color: $thirdly;
+    background-color: $gray-200;
     height: 350px;
 
     svg {

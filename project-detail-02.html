@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
   <head>
     <meta charset="UTF-8">
     <link rel="icon" href="/favicon.ico">
@@ -10,19 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
   </head>
-  <body class="p-about">
+  <body class="p-project">
     <!-- Header -->
      <header class="c-header">
         <div class="container">
           <div class="navbar">
-            <h1 class="navbar__title">NamTran.dev</h1>
+            <h1 class="navbar__title">TN</h1>
             <button class="navbar__toggle" aria-label="Toggle navigation menu">
               <span class="navbar__toggle-icon"></span>
               <span class="navbar__toggle-icon"></span>
               <span class="navbar__toggle-icon"></span>
             </button>
             <ul class="navbar__menu">
-              <li><a href="./" class="navbar__menu-item">About</a></li>
+              <li><a href="./index.html" class="navbar__menu-item">About</a></li>
               <li><a href="./projects.html" class="navbar__menu-item">Projects</a></li>
               <li><a href="./resume.html" class="navbar__menu-item">Resume</a></li>
               <li><a href="./contact.html" class="navbar__menu-item">Contact</a></li>
@@ -32,72 +32,52 @@
      </header>
 
      <div class="c-main">
-      <section class="c-section-hero mb-5">
+      <section class="c-project__intro mb-5">
         <div class="container">
-          <div class="c-section-hero__flex">
-            <div class="c-section-hero__img">
-              <img src="./images/img-01.JPG" alt="nam tran">
-            </div>
-            <div class="c-section-hero__content">
-              <p class="c-section-hero__sub-title">About Me</p>
-              <h2 class="c-section-hero__title">About Me</h2>
-              <p class="c-section-hero__text">I am Nam Tran, a passionate Frontend Engineer with experience in building responsive and user-friendly web applications. Want to know how I may help your project? Check out my project <a href="./projects.html">case studies</a> and <a href="./contact.html">resume</a>.</p>
-              <a href="./contact.html" class="btn btn-primary">Contact Me</a>
+          <div class="c-project__intro-flex d-flex justify-content-between">
+            <div class="c-project__intro-contain">
+              <h2>AVANTI Research</h2>
+              <p>E-commerce platform for market research services</p>
             </div>
           </div>
         </div>
       </section>
-      <section class ="c-section-skills mb-5">
-        <div class="container">
-          <div class="c-section-skills__intro">
-            <h2 class="c-section-title">Skills Overview</h2>
-            <p class="c-section-skills__text">Senior Frontend Developer focused on JavaScript, HTML, CSS/SCSS, and responsive layout development, with hands-on experience building frontend projects using Vue.js. Strong attention to code quality, UI accuracy, performance, and accessibility. <a class="inline-block" href="./resume.html">Check out my online resume.</a></p>
-          </div>
-          <div class="row c-section-skills__details">
-            <div class="col-12 col-lg-4 mb-5 mb-3 mb-lg-0 c-section-skills__item">
-              <div class="c-section-skills__contain">
-                <p class="c-section-skills__icon"><img src="./images/icon-01.svg" alt="Frontend"></p>
-                <h3 class="c-section-skills__item-title h4">Frontend</h3>
-                <ul class="c-section-skills__list">
-                  <li>JavaScript</li>
-                  <li>jQuery</li>
-                  <li>HTML5</li>
-                  <li>CSS3, SCSS, BEM</li><li>Vue.js</li><li>Nuxt.js</li>
-                     
-                  <li>Responsive</li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-12 col-lg-4 mb-5 mb-3 mb-lg-0 c-section-skills__item">
-              <div class="c-section-skills__contain">
-                <p class="c-section-skills__icon"><img src="./images/icon-02.svg" alt=""></p>
-                <h3 class="c-section-skills__item-title h4">Tooling</h3>
-                <ul class="c-section-skills__list">
-                  <li>Bootstrap</li>
-                  <li>Tailwind CSS</li>
-                  <li>Handlebars</li>
-                  <li>Gulp</li>
-                  <li>WordPress, Drupal</li>
-                  <li>Git, GitHub</li>
-                <li>Lighthouse, WAVE</li></ul>
-              </div>
-            </div>
-            <div class="col-12 col-lg-4 mb-5 mb-3 mb-lg-0 c-section-skills__item">
-              <div class="c-section-skills__contain">
-                <p class="c-section-skills__icon"><img src="./images/icon-03.svg" alt="Others"></p>
-                <h3 class="c-section-skills__item-title h4">Others</h3>
-                <ul class="c-section-skills__list">
-                  <li>Jira</li>
-                  <li>Agile / Scrum</li>
-                  <li>Jira, Bitbucket</li><li>Bitbucket</li>
-                  <li>Adobe Photoshop</li>
-                  <li>Adobe Illustrator</li>
-                  <li>Adobe XD</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+      <section>
+        <section class="container mb-5">
+<figure class="mb-4">
+      <img src="./images/projects/img-04.jpg" alt="Croda project screenshot" class="img-fluid">
+      <figcaption class="text-muted text-center mt-2">AVANTI Research website</figcaption>
+    </figure>
+    <figure class="mb-4">
+      <img src="./images/projects/img-05.jpg" alt="Croda project screenshot" class="img-fluid">
+      <figcaption class="text-muted text-center mt-2">Product finder page - Created by Vue</figcaption>
+    </figure>
+<h3 class="section-title">Project Overview</h3>
+<p>
+  AVANTI Research is a corporate and e-commerce platform providing market research products and services.
+  The project focused on rebuilding and optimizing the frontend architecture to improve usability,
+  performance, and scalability across product listing and checkout flows.
+</p>
+
+<h3 class="section-title">My Role & Contributions</h3>
+<ul>
+  <li>Revamped corporate and e-commerce website architecture</li>
+  <li>Developed Product Listing Pages (PLP) and Product Detail Pages (PDP)</li>
+  <li>Implemented end-to-end order workflow including checkout and order management</li>
+  <li>Integrated middleware APIs for efficient frontend–backend communication</li>
+  <li>Optimized performance and improved accessibility compliance</li>
+</ul>
+
+<h3 class="section-title">Technologies</h3>
+<p>
+  HTML5, SCSS, JavaScript, Bootstrap, REST APIs, Performance Optimization, Accessibility
+</p>
+
+  <!-- Link Back -->
+    <div class="mt-5">
+      <a href="projects.html" class="btn btn-primary">← Back to Projects</a>
+    </div>
+  </section> 
       </section>
       <section class="c-featured-project bg-white py-5">
         <div class="container">
@@ -203,6 +183,8 @@
           <p class="c-footer__text">© 2026 Nam Tran. All rights reserved.</p>
         </div>
      </footer>
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>

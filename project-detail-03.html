@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
   <head>
     <meta charset="UTF-8">
     <link rel="icon" href="/favicon.ico">
@@ -10,19 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
   </head>
-  <body class="p-about">
+  <body class="p-project">
     <!-- Header -->
      <header class="c-header">
         <div class="container">
           <div class="navbar">
-            <h1 class="navbar__title">NamTran.dev</h1>
+            <h1 class="navbar__title">TN</h1>
             <button class="navbar__toggle" aria-label="Toggle navigation menu">
               <span class="navbar__toggle-icon"></span>
               <span class="navbar__toggle-icon"></span>
               <span class="navbar__toggle-icon"></span>
             </button>
             <ul class="navbar__menu">
-              <li><a href="./" class="navbar__menu-item">About</a></li>
+              <li><a href="./index.html" class="navbar__menu-item">About</a></li>
               <li><a href="./projects.html" class="navbar__menu-item">Projects</a></li>
               <li><a href="./resume.html" class="navbar__menu-item">Resume</a></li>
               <li><a href="./contact.html" class="navbar__menu-item">Contact</a></li>
@@ -32,72 +32,50 @@
      </header>
 
      <div class="c-main">
-      <section class="c-section-hero mb-5">
+      <section class="c-project__intro mb-5">
         <div class="container">
-          <div class="c-section-hero__flex">
-            <div class="c-section-hero__img">
-              <img src="./images/img-01.JPG" alt="nam tran">
-            </div>
-            <div class="c-section-hero__content">
-              <p class="c-section-hero__sub-title">About Me</p>
-              <h2 class="c-section-hero__title">About Me</h2>
-              <p class="c-section-hero__text">I am Nam Tran, a passionate Frontend Engineer with experience in building responsive and user-friendly web applications. Want to know how I may help your project? Check out my project <a href="./projects.html">case studies</a> and <a href="./contact.html">resume</a>.</p>
-              <a href="./contact.html" class="btn btn-primary">Contact Me</a>
+          <div class="c-project__intro-flex d-flex justify-content-between">
+            <div class="c-project__intro-contain">
+              <h2>TSURUMI</h2>
+              <p>Corporate website for a law firm</p>
             </div>
           </div>
         </div>
       </section>
-      <section class ="c-section-skills mb-5">
-        <div class="container">
-          <div class="c-section-skills__intro">
-            <h2 class="c-section-title">Skills Overview</h2>
-            <p class="c-section-skills__text">Senior Frontend Developer focused on JavaScript, HTML, CSS/SCSS, and responsive layout development, with hands-on experience building frontend projects using Vue.js. Strong attention to code quality, UI accuracy, performance, and accessibility. <a class="inline-block" href="./resume.html">Check out my online resume.</a></p>
-          </div>
-          <div class="row c-section-skills__details">
-            <div class="col-12 col-lg-4 mb-5 mb-3 mb-lg-0 c-section-skills__item">
-              <div class="c-section-skills__contain">
-                <p class="c-section-skills__icon"><img src="./images/icon-01.svg" alt="Frontend"></p>
-                <h3 class="c-section-skills__item-title h4">Frontend</h3>
-                <ul class="c-section-skills__list">
-                  <li>JavaScript</li>
-                  <li>jQuery</li>
-                  <li>HTML5</li>
-                  <li>CSS3, SCSS, BEM</li><li>Vue.js</li><li>Nuxt.js</li>
-                     
-                  <li>Responsive</li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-12 col-lg-4 mb-5 mb-3 mb-lg-0 c-section-skills__item">
-              <div class="c-section-skills__contain">
-                <p class="c-section-skills__icon"><img src="./images/icon-02.svg" alt=""></p>
-                <h3 class="c-section-skills__item-title h4">Tooling</h3>
-                <ul class="c-section-skills__list">
-                  <li>Bootstrap</li>
-                  <li>Tailwind CSS</li>
-                  <li>Handlebars</li>
-                  <li>Gulp</li>
-                  <li>WordPress, Drupal</li>
-                  <li>Git, GitHub</li>
-                <li>Lighthouse, WAVE</li></ul>
-              </div>
-            </div>
-            <div class="col-12 col-lg-4 mb-5 mb-3 mb-lg-0 c-section-skills__item">
-              <div class="c-section-skills__contain">
-                <p class="c-section-skills__icon"><img src="./images/icon-03.svg" alt="Others"></p>
-                <h3 class="c-section-skills__item-title h4">Others</h3>
-                <ul class="c-section-skills__list">
-                  <li>Jira</li>
-                  <li>Agile / Scrum</li>
-                  <li>Jira, Bitbucket</li><li>Bitbucket</li>
-                  <li>Adobe Photoshop</li>
-                  <li>Adobe Illustrator</li>
-                  <li>Adobe XD</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+      <section>
+        <section class="container mb-5">
+<figure class="mb-4">
+      <img src="./images/projects/img-06.jpg" alt="Croda project screenshot" class="img-fluid">
+      <figcaption class="text-muted text-center mt-2">Croda Website</figcaption>
+    </figure>
+
+<h3 class="section-title">Project Overview</h3>
+<p>
+  TSURUMI is a corporate website developed for a law firm, focusing on clarity, professionalism,
+  and ease of content management. The project covered the full lifecycle from UI/UX design
+  to frontend implementation and deployment on WordPress.
+</p>
+
+<h3 class="section-title">My Role & Contributions</h3>
+<ul>
+  <li>Designed UI/UX layouts aligned with law firm branding and professionalism</li>
+  <li>Developed a custom WordPress theme with clean, maintainable frontend code</li>
+  <li>Implemented responsive layouts across desktop, tablet, and mobile</li>
+  <li>Optimized page performance and loading speed</li>
+  <li>Ensured cross-browser compatibility and accessibility best practices</li>
+</ul>
+
+<h3 class="section-title">Technologies</h3>
+<p>
+  HTML5, SCSS, JavaScript, WordPress, Responsive Design, Performance Optimization
+</p>
+
+
+  <!-- Link Back -->
+    <div class="mt-5">
+      <a href="projects.html" class="btn btn-primary">← Back to Projects</a>
+    </div>
+  </section> 
       </section>
       <section class="c-featured-project bg-white py-5">
         <div class="container">
@@ -110,7 +88,7 @@
                   <div class="card-img-overlay overlay-logo text-center">
                     <div class="project-logo"><img class="img-fluid w-50" src="./images/sitecore-logo.webp" alt="croda"></div>
                   </div>
-                  <a href="./project-detail-01.html" class="card-img-overlay overlay-content text-start p-lg-4">
+                  <a href="./" class="card-img-overlay overlay-content text-start p-lg-4">
                     <h5 class="card-title font-weight-bold">Client: CRODA</h5>
                       <p class="card-text">Built and maintained a large-scale global website ecosystem with shared, reusable frontend components across multiple brands and regions. Focused on performance optimization at ecosystem level and consistent accessibility standards (semantic HTML, ARIA, WCAG).</p>
                   </a>
@@ -140,7 +118,7 @@
                   <div class="card-img-overlay overlay-logo text-center">
                     <div class="project-logo"><img class="img-fluid w-50" src="./images/avanti-logo.png" alt="avanti"></div>
                   </div>
-                  <a href="./project-detail-02.html" class="card-img-overlay overlay-content text-start p-lg-4">
+                  <a class="card-img-overlay overlay-content text-start p-lg-4">
                     <h5 class="card-title font-weight-bold">Client: CRODA</h5>
                       <p class="card-text">Developed and optimized a corporate e-commerce platform including PLP, PDP, and checkout workflows. Improved performance, accessibility, and frontend–backend integration through middleware APIs.</p>
                   </a>
@@ -170,7 +148,7 @@
                   <div class="card-img-overlay overlay-logo text-center">
                     <div class="project-logo"><img class="img-fluid w-50" src="./images/navi-logo.png" alt="navi"></div>
                   </div>
-                  <a href="./project-detail-03.html" class="card-img-overlay overlay-content text-start p-lg-4">
+                  <a class="card-img-overlay overlay-content text-start p-lg-4">
                     <h5 class="card-title font-weight-bold">Client: JPAN</h5>
                       <p class="card-text">Delivered a WordPress website from design to deployment, covering UI/UX design, custom theme development, and performance optimization. Implemented responsive layouts with clean, maintainable frontend code.</p>
                   </a>
@@ -203,6 +181,8 @@
           <p class="c-footer__text">© 2026 Nam Tran. All rights reserved.</p>
         </div>
      </footer>
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>
