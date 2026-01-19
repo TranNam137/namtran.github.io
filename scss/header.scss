@@ -7,6 +7,10 @@
     &__title {
       font-size: 20px;
       margin: 0;
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
     }
 
     &__menu {
